@@ -1,0 +1,6 @@
+<div class="uploaded-images">
+    <% images.forEach(function(image) { %>
+          <img class="image" src="data:image/<%=image.contentType%>;base64,
+          <%=image.data.toString('base64')%>">
+    <% }); %>
+</div>
